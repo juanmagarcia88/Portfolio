@@ -1,0 +1,45 @@
+<div class="header">
+
+    <div class="contenedor-logo">
+
+        <h2 (click)="irAInicio()">jmgf_</h2>
+
+    </div>
+
+    <!-- Burger de Uiverse -->
+    <label class="hamburger">
+        <input type="checkbox" (change)="desplegarMenu($event)" />
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+    </label>
+
+    <div class="menu" #menu>
+
+        <p (click)="irASobreMi()">sobre mí...</p>
+        <p (click)="irAProyectos()">proyectos</p>
+        <p (click)="irAHabilidades()">habilidades</p>
+        <p (click)="irAContacto()">contacto</p>
+
+    </div>
+
+</div>
+
+<div class="main">
+
+    <h1 class="tituloSeccion">Redes sociales</h1>
+
+    <div class="redes-container">
+        <a href="https://github.com/juanmagarcia88" target="_blank" aria-label="GitHub">
+            <img class="redes" src="images/github_icon.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/juanma-garc%C3%ADa-flores-6807402a5/" target="_blank"
+            aria-label="LinkedIn">
+            <img class="redes" src="images/linkedIn_icon.svg" alt="LinkedIn">
+        </a>
+    </div>
+
+</div>

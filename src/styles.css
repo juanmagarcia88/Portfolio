@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* --space-cadet: #2b2d42ff;
+ --cool-gray: #8d99aeff; 
+ --antiflash-white: #edf2f4ff; 
+ --red-pantone: #ef233cff; 
+ --fire-engine-red: #d90429ff;*/
+
+body {
+    background-color: #edf2f4ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   

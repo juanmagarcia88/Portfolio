@@ -1,0 +1,77 @@
+<div class="header">
+
+    <div class="contenedor-logo">
+
+        <h2 (click)="irAInicio()">jmgf_</h2>
+
+    </div>
+
+    <!-- Burger de Uiverse -->
+    <label class="hamburger">
+        <input type="checkbox" (change)="desplegarMenu($event)" />
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+    </label>
+
+    <div class="menu" #menu>
+
+        <p (click)="irAHabilidades()">habilidades</p>
+        <p (click)="irAProyectos()">proyectos</p>
+        <p (click)="irARedesSociales()">redes sociales</p>
+        <p (click)="irAContacto()">contacto</p>
+
+    </div>
+
+</div>
+
+<div class="main">
+
+    <h1 class="tituloSeccion">Sobre mí...</h1>
+
+    <div class="aprendizaje">
+
+        <div class="textoAprendizaje">
+            <p>Acabo de finalizar mis estudios de Desarrollo de Aplicaciones Web (DAW), obteniendo el mejor expediente
+                académico de mi promoción. Este logro refleja mi constancia, esfuerzo y pasión por la informática, una
+                disciplina que me atrapó desade el primer día de clase.</p>
+
+            <p>Empecé el ciclo con interés por la informática, pero sin experiencia en programación. A base de práctica,
+                cometer errores y volver a intentarlo una y otra vez, descubrí que programar es mucho más que escribir
+                código: es aprender a resolver problemas.
+                Con el tiempo, entendí que cada reto podía abordarse de distintas formas y que no existe una única
+                solución
+                “correcta”. Ese carácter infinito y creativo de la programación fue lo que me enganchó definitivamente.
+            </p>
+        </div>
+
+        <img src="images/daw_img.svg" alt="Imagen ciclo DAW" class="imgCiclo">
+
+    </div>
+
+    <div class="practicas">
+
+        <img src="images/normapro.png" alt="Logo de NormaPro" class="imgNormapro">
+
+        <p>Durante mi periodo de prácticas en Normapro, trabajé de manera remota en proyectos reales, lo que supuso un
+            gran reto y a la vez una experiencia enriquecedora. Allí aprendí nuevas tecnologías, comprendí cómo se
+            organiza un equipo de desarrollo en la práctica y confirmé que quiero dedicar mi carrera a crear soluciones
+            útiles a través de la programación.</p>
+
+    </div>
+
+
+    <div class="proyectoCurso">
+        <p>Además, durante el segundo año desarrollé junto a dos compañeros un proyecto de fin de curso en el que
+            simulamos el caso real de una página web para la gestión de reservas de un hotel. Fue nuestro primer gran
+            proyecto completo, con frontend, backend y base de datos. Supuso un auténtico desafío, ya que tuvimos que
+            superar muchos problemas trabajando en equipo, lo que me permitió aprender muchísimo tanto a nivel técnico
+            como personal.</p>
+
+        <img src="images/hotel_img.png" alt="Imagen proyecto hotel" class="imgHotel">
+    </div>
+
+</div>

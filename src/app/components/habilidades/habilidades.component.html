@@ -1,0 +1,145 @@
+<div class="header">
+  <div class="contenedor-logo">
+    <h2 (click)="irAInicio()">jmgf_</h2>
+  </div>
+  
+  <!-- Burger de Uiverse -->
+  <label class="hamburger">
+    <input type="checkbox" (change)="desplegarMenu($event)" />
+    <svg viewBox="0 0 32 32">
+      <path class="line line-top-bottom"
+        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+      </path>
+      <path class="line" d="M7 16 27 16"></path>
+    </svg>
+  </label>
+
+  <div class="menu" #menu>
+    <p (click)="irASobreMi()">sobre mí...</p>
+    <p (click)="irAProyectos()">proyectos</p>
+    <p (click)="irARedesSociales()">redes sociales</p>
+    <p (click)="irAContacto()">contacto</p>
+  </div>
+</div>
+
+<div class="main">
+  <h1 class="tituloSeccion">Habilidades</h1>
+
+  <div class="compTecnologicas">
+    <h2 class="subtituloSeccion">Competencias digitales</h2>
+    <div class="linea2"></div>
+
+    <div class="bloqueComp">
+      <h2 class="subtituloComps">Lenguajes y tecnologías web</h2>
+      <div class="contenedorTecs">
+        <div class="tec">
+          <img src="images/js_icon.svg" alt="JS">
+          <p>JavaScript</p>
+        </div>
+        <div class="tec">
+          <img src="images/html_icon.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="tec">
+          <img src="images/css_icon.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="tec">
+          <img src="images/java_icon.svg" alt="JAVA">
+          <p>Java</p>
+        </div>
+        <div class="tec">
+          <img src="images/sql_icon.svg" alt="SQL">
+          <p>SQL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloqueComp">
+      <h2 class="subtituloComps">Frameworks y librerías</h2>
+      <div class="contenedorTecs">
+        <div class="tec">
+          <img src="images/springboot_icon.svg" alt="Spring">
+          <p>Spring Boot</p>
+        </div>
+        <div class="tec">
+          <img src="images/vue_icon.svg" alt="Vue">
+          <p>Vue.js</p>
+        </div>
+        <div class="tec">
+          <img src="images/react_icon.svg" alt="React">
+          <p>React</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloqueComp">
+      <h2 class="subtituloComps">Control de versiones</h2>
+      <div class="contenedorTecs">
+        <div class="tec">
+          <img src="images/git_icon.svg" alt="Git">
+          <p>Git</p>
+        </div>
+        <div class="tec">
+          <img src="images/github_icon.svg" alt="GitHub">
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="habsPersonales">
+    <h2 class="subtituloSeccion">Habilidades Personales</h2>
+    <div class="linea3"></div>
+
+    <div class="tarjetasHabsPers1">
+      <div class="card"
+        (click)="abrirModal('Responsabilidad y compromiso', 'Me involucro plenamente en los proyectos en los que participo, cumpliendo con las tareas asignadas y asegurándome de que los objetivos se alcancen en tiempo y forma.')">
+        <p class="tituloHab">Responsabilidad y compromiso</p>
+        <img src="images/check.svg" alt="Responsabilidad y compromiso" class="iconoHab">
+      </div>
+
+      <div class="card"
+        (click)="abrirModal('Trabajo en equipo y en solitario', 'Disfruto colaborar con otros para alcanzar metas comunes, aportando ideas y apoyando a mis compañeros, pero también tengo la capacidad de organizarme y rendir de forma autónoma cuando el proyecto lo requiere.')">
+        <p class="tituloHab">Trabajo en equipo y en solitario</p>
+        <img src="images/equipo.svg" alt="Trabajo en equipo y en solitario" class="iconoHab">
+      </div>
+
+      <div class="card"
+        (click)="abrirModal('Perseverancia', 'Ante los retos, mantengo la constancia y la motivación para encontrar soluciones, sin rendirme fácilmente y aprendiendo de los errores en el proceso.')">
+        <p class="tituloHab">Perseverancia</p>
+        <img src="images/flame.svg" alt="Perseverancia" class="iconoHab">
+      </div>
+    </div>
+
+    <div class="tarjetasHabsPers1">
+      <div class="card"
+        (click)="abrirModal('Empatía y orientación al detalle', 'Escucho y entiendo las necesidades de los demás, lo que me ayuda a trabajar mejor en equipo y a desarrollar soluciones más útiles, cuidando siempre los pequeños detalles que marcan la diferencia.')">
+        <p class="tituloHab">Empatía y orientación al detalle</p>
+        <img src="images/heart-handshake.svg" alt="Empatía y orientación al detalle" class="iconoHab">
+      </div>
+
+      <div class="card"
+        (click)="abrirModal('Adaptación a nuevas tecnologías', 'Me mantengo en constante aprendizaje y no tengo dificultad en incorporar nuevas herramientas o metodologías, lo que me permite mantenerme actualizado en un entorno en continua evolución.')">
+        <p class="tituloHab">Adaptación a nuevas tecnologías</p>
+        <img src="images/cpu.svg" alt="Adaptación a nuevas tecnologías" class="iconoHab">
+      </div>
+
+      <div class="card"
+        (click)="abrirModal('Puntualidad', 'Considero fundamental respetar los plazos y horarios, lo que garantiza un flujo de trabajo organizado y confiable.')">
+        <p class="tituloHab">Puntualidad</p>
+        <img src="images/reloj.svg" alt="Puntualidad" class="iconoHab">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal" *ngIf="modalAbierto">
+  <div class="modal-content">
+    <span class="cerrar" (click)="cerrarModal()">-</span>
+    <h2>{{ modalTitulo }}</h2>
+    <p>{{ modalDescripcion }}</p>
+  </div>
+</div>

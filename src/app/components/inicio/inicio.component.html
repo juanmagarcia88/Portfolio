@@ -1,0 +1,55 @@
+<div class="header">
+
+    <div class="contenedor-logo">
+
+        <h2>jmgf_</h2>
+
+    </div>
+
+    <!-- Burger de Uiverse -->
+    <label class="hamburger">
+        <input type="checkbox" (change)="desplegarMenu($event)" />
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+    </label>
+
+    <div class="menu" #menu>
+
+        <p (click)="irAHabilidades()">habilidades</p>
+        <p (click)="irAProyectos()">proyectos</p>
+        <p (click)="irARedesSociales()">redes sociales</p>
+        <p (click)="irAContacto()">contacto</p>
+
+    </div>
+
+</div>
+
+<div class="main">
+
+    <div>
+
+        <h1 class="saludo">Hola, soy Juanma García</h1>
+
+        <div class="presentacion">
+
+            <p>Soy desarrollador web junior apasionado por aprender y mejorar constantemente. Me
+                especializo en Front-end, pero también tengo multitud de conocimientos en Back-end, y me encanta
+                enfrentar nuevos
+                retos y convertir ideas en proyectos funcionales.</p>
+
+        </div>
+
+    </div>
+
+    <!-- From Uiverse.io by cssbuttons-io -->
+    <button class="boton" (click)="irASobreMi()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Más sobre mí</span>
+    </button>
+
+</div>
