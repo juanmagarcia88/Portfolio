@@ -350,6 +350,13 @@ body {
     gap: 40px;
     font-size: 18px;
   }
+
+  .proyecto,
+  .proyecto-info,
+  .proyecto-galeria {
+    max-width: 90%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 768px) {
@@ -371,10 +378,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
-  }
-
-  .main {
-    padding: 0 20px;
   }
 
 }
