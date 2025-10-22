@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html,
@@ -18,7 +20,11 @@ body {
     background-color: #2b2d42ff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     animation: slideDown 1.0s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 @keyframes slideDown {
     from {
@@ -93,6 +99,7 @@ body {
 
 /* From Uiverse.io by cssbuttons-io */
 .boton {
+    margin-top: 20px;
     position: relative;
     border: none;
     background: transparent;
@@ -175,48 +182,47 @@ body {
     width: 650px;
 }
 
-/* Hamburger SVG */
 .hamburger {
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1100;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1100;
 }
 
 .hamburger input {
-  display: none;
+    display: none;
 }
 
 .hamburger svg {
-  height: 2em;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 2em;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line {
-  fill: none;
-  stroke: #edf2f4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition:
-    stroke-dasharray 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    fill: none;
+    stroke: #edf2f4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition:
+        stroke-dasharray 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
-  stroke-dasharray: 12 63;
+    stroke-dasharray: 12 63;
 }
 
 .hamburger input:checked+svg {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .hamburger input:checked+svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
 
 @media (max-width: 1200px) {
@@ -292,10 +298,14 @@ body {
         margin-top: 100px;
         padding: 0 30px;
     }
+
+    .saludo {
+        font-size: 28px;
+    }
 }
 
 @media (hover: none) {
-  .tituloSeccion:hover::after {
-    transform: scaleX(0.3);
-  }
+    .tituloSeccion:hover::after {
+        transform: scaleX(0.3);
+    }
 }

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class InicioComponent {
   @ViewChild('menu') menu!: ElementRef;
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   irASobreMi() {
     this.router.navigate(['/sobre-mi']);
@@ -33,11 +33,11 @@ export class InicioComponent {
   }
 
   desplegarMenu(event: any) {
-    if(event.target.checked) {
+    if (event.target.checked) {
       this.menu.nativeElement.classList.add('activo');
     } else {
       this.menu.nativeElement.classList.remove('activo');
     }
   }
-  
+
 }

@@ -31,7 +31,7 @@ export class RedesSocialesComponent {
   irAInicio() { this.router.navigate(['']); }
 
   desplegarMenu(event: any) {
-    if(event.target.checked) {
+    if (event.target.checked) {
       this.menu.nativeElement.classList.add('activo');
     } else {
       this.menu.nativeElement.classList.remove('activo');

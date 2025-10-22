@@ -102,7 +102,6 @@ body {
   transform: scaleX(1);
 }
 
-/* Hamburger SVG */
 .hamburger {
   cursor: pointer;
   display: none;
@@ -354,7 +353,7 @@ body {
     max-width: 80%;
     padding: 20px;
   }
-  
+
 }
 
 @media (hover: none) {

@@ -1,13 +1,13 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-  overflow-x: hidden;
-  width: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .header {
@@ -72,7 +72,7 @@ body {
 
 @keyframes slideIn {
     from {
-        transform: translateX(-50px);
+        transform: translateX(-70px);
         opacity: 0;
     }
 
@@ -119,54 +119,59 @@ body {
     margin: 40px;
     transition: transform 0.4s ease;
     cursor: pointer;
+
+}
+
+.redes-container {
+    opacity: 0;
+    animation: slideIn 0.8s ease forwards;
 }
 
 .redes:hover {
     transform: scale(1.2);
 }
 
-/* Hamburger SVG */
 .hamburger {
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1100;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1100;
 }
 
 .hamburger input {
-  display: none;
+    display: none;
 }
 
 .hamburger svg {
-  height: 2em;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 2em;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line {
-  fill: none;
-  stroke: #edf2f4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition:
-    stroke-dasharray 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    fill: none;
+    stroke: #edf2f4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition:
+        stroke-dasharray 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
-  stroke-dasharray: 12 63;
+    stroke-dasharray: 12 63;
 }
 
 .hamburger input:checked+svg {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .hamburger input:checked+svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
 
 @media (max-width: 1200px) {
@@ -225,10 +230,14 @@ body {
     .menu.activo {
         display: flex;
     }
+
+    .redes {
+        width: 70px;
+    }
 }
 
 @media (hover: none) {
-  .tituloSeccion:hover::after {
-    transform: scaleX(0.3);
-  }
+    .tituloSeccion:hover::after {
+        transform: scaleX(0.3);
+    }
 }

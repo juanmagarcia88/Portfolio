@@ -199,7 +199,6 @@ body {
     transform: scale(1.05) rotate(1deg);
 }
 
-/* Hamburger SVG */
 .hamburger {
     cursor: pointer;
     display: none;
@@ -370,7 +369,7 @@ body {
 }
 
 @media (hover: none) {
-  .tituloSeccion:hover::after {
-    transform: scaleX(0.3);
-  }
+    .tituloSeccion:hover::after {
+        transform: scaleX(0.3);
+    }
 }
