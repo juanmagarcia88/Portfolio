@@ -17,15 +17,18 @@ export class ProyectosComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement;
-    const imgs = document.querySelectorAll<HTMLImageElement>('.galeria-imagenes img');
     const lightboxEl = document.getElementById('lightbox');
 
-    imgs.forEach(img => {
-      img.addEventListener('click', () => {
-        this.lightboxImg.src = img.src;
-        lightboxEl!.style.display = 'block';
-      });
-    });
+    const abrirLightbox = (img: HTMLImageElement) => {
+      this.lightboxImg.src = img.src;
+      lightboxEl!.style.display = 'block';
+    };
+
+    const imgs1 = document.querySelectorAll<HTMLImageElement>('.galeria-imagenes img');
+    imgs1.forEach(img => img.addEventListener('click', () => abrirLightbox(img)));
+
+    const imgs2 = document.querySelectorAll<HTMLImageElement>('.galeria-imagenes2 img');
+    imgs2.forEach(img => img.addEventListener('click', () => abrirLightbox(img)));
 
     const cerrar = document.querySelector('.cerrar');
     cerrar?.addEventListener('click', () => {
