@@ -398,6 +398,24 @@ body {
     display: flex;
   }
 
+  .proyecto,
+  .proyecto-info,
+  .proyecto-galeria {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .galeria-imagenes2 img {
+    width: 150px;
+    margin-bottom: -50px;
+  }
+
+  .galeria-imagenes img,
+  .galeria-imagenes2 img {
+    pointer-events: none;
+    cursor: default;
+  }
+
 }
 
 @media (hover: none) {
