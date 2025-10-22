@@ -42,6 +42,9 @@ export class ContactoComponent {
         this.emailError = false;
         this.form = { nombre: '', reply_to: '', mensaje: '' };
         form.resetForm();
+        setTimeout(() => {
+          this.emailEnviado = false;
+        }, 5000);
       })
       .catch(error => {
         console.error('Error al enviar correo:', error);

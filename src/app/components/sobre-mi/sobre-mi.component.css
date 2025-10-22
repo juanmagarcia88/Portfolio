@@ -338,6 +338,7 @@ body {
     .imgHotel {
         width: 35%;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -365,7 +366,10 @@ body {
         width: 100%;
     }
 
-
+    .imgHotel {
+        margin-bottom: -40px;
+    }
+    
 }
 
 @media (hover: none) {
