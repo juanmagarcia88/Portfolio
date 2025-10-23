@@ -265,6 +265,7 @@ body {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  margin-bottom: -50px;
 }
 
 .galeria-imagenes2 img {
@@ -405,6 +406,7 @@ body {
   .proyecto-info,
   .proyecto-galeria {
     max-width: 100%;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
