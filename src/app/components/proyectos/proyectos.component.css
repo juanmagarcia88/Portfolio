@@ -10,7 +10,6 @@ body {
   width: 100%;
 }
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -185,6 +184,10 @@ body {
   animation: slideIn 1.2s ease forwards;
 }
 
+.proyecto {
+  margin-bottom: 150px;
+}
+
 .proyecto-info {
   text-align: left;
   max-width: 900px;
@@ -320,7 +323,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-
 .cerrar {
   position: absolute;
   top: 20px;
@@ -335,7 +337,6 @@ body {
 .cerrar:hover {
   color: #bbb;
 }
-
 
 @media (max-width: 1200px) {
   .header {
